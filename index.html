@@ -2,33 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="keywrods" content="Card, Preview, html, css">
+  <meta name="description" content="Card Preview Website foundation for html and css">
+
+  <meta http-equiv="author" name="Rehm Ali">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+ @font-face {
+  font-family: Italicfigtree;
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+ }
+ 
+ @font-face {
+  font-family: Figtree;
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+ }
+      body {
+        background-color: hsl(47, 88%, 63%);
+        padding:0;
+        margin:0;
+      }
+
+      .main{
+        background-color: hsl(0, 0%, 100%) ;
+        width:310px;
+        display: block;
+        margin:0px auto;
+        text-align:center; /* Text Align only will not work on this element because we add width property */
+                            /* To center teh whole element use tha bove method must*/
+        margin-top:100px;
+        border-radius:15px;
+        /* box-shadow: 5px 5px 1px black; */
+
+        box-shadow: -1px -0.5px 1px black, 
+                    -1px 1px 1px black, 
+                      2px -1px 1px black, 
+                      6px 5px 1px black;
+      }
+      .text-section {  /*Formatting All text*/
+        text-align:left;
+        padding-left:20px;
+        font-family: Figtree;
+      }
+      .img-main{
+        width:90%;
+        display: inline-block;
+        padding:20px 10px;
+        border-radius:25px;
+      }
+
+      button {
+       background-color: hsl(47, 88%, 63%);
+       border:none;
+       padding:5px;
+       border-radius: 3px;
+       font-weight: bolder;
+       font-family:Figtree;
+      }
+      .text-1{
+        font-size: 12px;
+        font-family: Figtree;
+        font-weight: bold;
+        margin-bottom:-5px;
+      }
+      .text-2{
+        color:hsl(0, 0%, 42%)
+      }
+      img {
+        width:30px;
+        border-radius: 50%;
+      }
+      footer  {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-left:20px;
+        padding-bottom: 20px;
+      }
+      #author  {
+         padding-left:10px;
+        
+         font-weight: bold;
+         font-family: Figtree;
+      }
+      h3:hover {
+          color:hsl(47, 88%, 63%);
+          cursor:grab;
+      }
   </style>
 </head>
 <body>
+ <main class="main">
 
-  Learning
+<img src="./assets/images/illustration-article.svg" class="img-main" alt="Code Preview">
 
-  Published 21 Dec 2023
+<!--This Secton Contains All text-->
+<section class="text-section">
+  <button id="learn"> <b>Learning</b></button>
+  <p class="text-1"> Published 24 July 2024 </p>
+  <h3> HTML & CSS foundations </h3>
+<p class="text-2"> These languages are the backbone of every website, defining structure, content, and presentation. </p>
 
-  HTML & CSS foundations
+</section>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
 
-  Greg Hooper
+  <!-- In this Section I am Supposing it as a Footer-->
+  <footer><img src="./assets/images/image-avatar2.jpg" alt="Author"> <span id="author"> Rehm Ali</span>  </footer>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      </main>
+    </body>
 </html>
