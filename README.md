@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Card-Preview
-Polishing My Skills , Building a Card Preview HTML Static Web Page 
-=======
 # Frontend Mentor - Blog preview card solution
 
 This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -32,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/rehmali/Card-Preview.git
+- Live Site URL: https://rehmali.github.io/Card-Preview/
 
 ## My process
   = First I organized HTML Code , using Tags, Classes and Ids
@@ -50,12 +46,11 @@ In this i learned how i can posotion different elements in a page
 I also learned that some properties i can not use on inline elements 
 
 
-## Author
+## Author Details
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - https://github.com/rehmali
+- Frontend Mentor - https://www.frontendmentor.io/profile/rehmali
 
 ## Acknowledgments
 
 I thank Frontend Mentor for providing such beautiful paths for learning 
->>>>>>> master
